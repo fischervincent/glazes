@@ -2,7 +2,7 @@
   "glazes": [
     {
       "id": "b9343",
-      "name": "Vert Bouteille",
+      "name": "Bottle Green",
       "reference": "B9343",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -23,7 +23,7 @@
     },
     {
       "id": "b9352",
-      "name": "Turquoise Craquelé",
+      "name": "Turquoise Crackle",
       "reference": "B9352",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -44,7 +44,7 @@
     },
     {
       "id": "b9529",
-      "name": "Rose Cristal",
+      "name": "Rose Crystal",
       "reference": "B9529",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -65,7 +65,7 @@
     },
     {
       "id": "b9541",
-      "name": "Or Métallique",
+      "name": "Gold",
       "reference": "B9541",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -86,7 +86,7 @@
     },
     {
       "id": "b9101",
-      "name": "Blanc Brillant",
+      "name": "Brilliant White",
       "reference": "B9101",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -107,7 +107,7 @@
     },
     {
       "id": "b9531",
-      "name": "Champ d'Hiver",
+      "name": "Winter Meadow",
       "reference": "B9531",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -128,7 +128,7 @@
     },
     {
       "id": "b9533",
-      "name": "Marron Lunaire",
+      "name": "Ironstone",
       "reference": "B9533",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -149,7 +149,7 @@
     },
     {
       "id": "b9571",
-      "name": "Pierre",
+      "name": "Stone",
       "reference": "B9571",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -170,7 +170,7 @@
     },
     {
       "id": "b9561",
-      "name": "Rose Pastel",
+      "name": "Pastel Rose",
       "reference": "B9561",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -191,7 +191,7 @@
     },
     {
       "id": "b9381",
-      "name": "Bleu Royal",
+      "name": "Royal Blue",
       "reference": "B9381",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -212,7 +212,7 @@
     },
     {
       "id": "b9540",
-      "name": "Rosée du Matin",
+      "name": "Morning Dew",
       "reference": "B9540",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
@@ -233,7 +233,7 @@
     },
     {
       "id": "b9350",
-      "name": "Bleu d'Été",
+      "name": "Summer Blue",
       "reference": "B9350",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
