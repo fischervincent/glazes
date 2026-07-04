@@ -109,6 +109,7 @@ function render() {
   const q = searchQuery.toLowerCase().trim();
 
   const filtered = allGlazes.filter(g => {
+    if (g.owned === false) return false;
     if (filters.brand !== 'all' && g.brand !== filters.brand) return false;
     if (filters.temp !== 'all' && g.tempCategory !== filters.temp) return false;
     if (filters.form !== 'all' && g.form !== filters.form) return false;

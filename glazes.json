@@ -40,7 +40,8 @@
       "productUrl": "https://ceradel.fr/en/products/b9352-botz-turquoise-craquele-200ml-1020-1060-c",
       "volume": "200 ml",
       "notes": "1 coat only — runs strongly. Not for dinnerware. Darker flaky crackle appears on some clays.",
-      "tags": ["craquelé"]
+      "tags": ["craquelé"],
+      "owned": false
     },
     {
       "id": "b9529",
