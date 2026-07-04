@@ -46,7 +46,8 @@ function buildCard(glaze) {
   const template = document.getElementById('card-template');
   const card = template.content.cloneNode(true);
 
-  card.querySelector('.card-swatch').style.background = glaze.colorHex;
+  const swatch = card.querySelector('.card-swatch');
+  swatch.style.background = glaze.colorHex;
 
   if (glaze.imageUrl) {
     const img = card.querySelector('.card-img');
@@ -55,6 +56,14 @@ function buildCard(glaze) {
     img.dataset.loaded = 'false';
     img.addEventListener('load', () => { img.dataset.loaded = 'true'; });
     img.addEventListener('error', () => { img.remove(); });
+
+    swatch.addEventListener('mousemove', e => {
+      if (img.dataset.loaded !== 'true') return;
+      const rect = swatch.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      img.style.transformOrigin = `${x}% ${y}%`;
+    });
   } else {
     card.querySelector('.card-img').remove();
   }
