@@ -21,6 +21,7 @@ const BRAND_SHORT = {
 
 let allGlazes = [];
 let filters = { brand: 'all', temp: 'all', form: 'all', color: 'all' };
+let searchQuery = '';
 
 async function init() {
   const response = await fetch('glazes.json');
@@ -28,6 +29,8 @@ async function init() {
   allGlazes = data.glazes;
   render();
   setupFilters();
+  setupSearch();
+  setupViewToggle();
 }
 
 function formatTemp(glaze) {
@@ -41,8 +44,7 @@ function buildCard(glaze) {
   const template = document.getElementById('card-template');
   const card = template.content.cloneNode(true);
 
-  const swatch = card.querySelector('.card-swatch');
-  swatch.style.background = glaze.colorHex;
+  card.querySelector('.card-swatch').style.background = glaze.colorHex;
 
   if (glaze.imageUrl) {
     const img = card.querySelector('.card-img');
@@ -84,11 +86,14 @@ function render() {
   const emptyState = document.getElementById('empty-state');
   grid.innerHTML = '';
 
+  const q = searchQuery.toLowerCase().trim();
+
   const filtered = allGlazes.filter(g => {
     if (filters.brand !== 'all' && g.brand !== filters.brand) return false;
     if (filters.temp !== 'all' && g.tempCategory !== filters.temp) return false;
     if (filters.form !== 'all' && g.form !== filters.form) return false;
     if (filters.color !== 'all' && g.colorFamily !== filters.color) return false;
+    if (q && !`${g.name} ${g.notes} ${g.reference}`.toLowerCase().includes(q)) return false;
     return true;
   });
 
@@ -97,11 +102,7 @@ function render() {
   document.getElementById('count-badge').textContent =
     `${filtered.length} / ${allGlazes.length} émaux`;
 
-  if (filtered.length === 0) {
-    emptyState.hidden = false;
-    return;
-  }
-  emptyState.hidden = true;
+  emptyState.hidden = filtered.length > 0;
   filtered.forEach(g => grid.appendChild(buildCard(g)));
 }
 
@@ -117,11 +118,33 @@ function setupFilters() {
     document.getElementById(elId).addEventListener('click', e => {
       const chip = e.target.closest('.chip');
       if (!chip) return;
+      const wasActive = chip.classList.contains('active');
       document.querySelectorAll(`#${elId} .chip`).forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      filters[filterKey] = chip.dataset.value;
+      if (wasActive && chip.dataset.value !== 'all') {
+        document.querySelector(`#${elId} [data-value="all"]`).classList.add('active');
+        filters[filterKey] = 'all';
+      } else {
+        chip.classList.add('active');
+        filters[filterKey] = chip.dataset.value;
+      }
       render();
     });
+  });
+}
+
+function setupSearch() {
+  document.getElementById('search-input').addEventListener('input', e => {
+    searchQuery = e.target.value;
+    render();
+  });
+}
+
+function setupViewToggle() {
+  document.getElementById('view-toggle').addEventListener('click', e => {
+    const btn = e.target.closest('.view-btn');
+    if (!btn) return;
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b === btn));
+    document.getElementById('glaze-grid').classList.toggle('mode-picture', btn.dataset.mode === 'picture');
   });
 }
 
