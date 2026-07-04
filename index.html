@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Collection d'Émaux</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Ma Collection d'Émaux</h1>
+      <span id="count-badge" class="count-badge"></span>
+    </div>
+  </header>
+
+  <div class="filters-bar">
+    <div class="filter-group">
+      <label>Marque</label>
+      <div class="chips" id="filter-brand">
+        <button class="chip active" data-value="all">Tout</button>
+        <button class="chip" data-value="Brilliant Botz">Botz</button>
+        <button class="chip" data-value="Ceradel">Ceradel</button>
+        <button class="chip" data-value="Amaco">Amaco</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Température</label>
+      <div class="chips" id="filter-temp">
+        <button class="chip active" data-value="all">Tout</button>
+        <button class="chip" data-value="faience">Faïence &lt;1100°C</button>
+        <button class="chip" data-value="gres">Grès ≥1200°C</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Forme</label>
+      <div class="chips" id="filter-form">
+        <button class="chip active" data-value="all">Tout</button>
+        <button class="chip" data-value="liquid">Liquide</button>
+        <button class="chip" data-value="powder">Poudre</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Couleur</label>
+      <div class="chips" id="filter-color">
+        <button class="chip active" data-value="all">Tout</button>
+        <button class="chip color-chip" data-value="white" style="--swatch:#f2f2ee">Blanc</button>
+        <button class="chip color-chip" data-value="pink" style="--swatch:#e8aabb">Rose</button>
+        <button class="chip color-chip" data-value="red" style="--swatch:#cc2828">Rouge</button>
+        <button class="chip color-chip" data-value="purple" style="--swatch:#b090c0">Mauve</button>
+        <button class="chip color-chip" data-value="blue" style="--swatch:#1a3a8c">Bleu</button>
+        <button class="chip color-chip" data-value="turquoise" style="--swatch:#2a9898">Turquoise</button>
+        <button class="chip color-chip" data-value="green" style="--swatch:#1a7850">Vert</button>
+        <button class="chip color-chip" data-value="gold" style="--swatch:#c8a830">Or</button>
+        <button class="chip color-chip" data-value="brown" style="--swatch:#6a5030">Brun</button>
+        <button class="chip color-chip" data-value="gray" style="--swatch:#909090">Gris</button>
+        <button class="chip color-chip" data-value="black" style="--swatch:#2a2a28">Noir</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="grid" id="glaze-grid"></div>
+    <p class="empty-state" id="empty-state" hidden>Aucun émail ne correspond aux filtres sélectionnés.</p>
+  </main>
+
+  <template id="card-template">
+    <article class="card">
+      <div class="card-swatch">
+        <img class="card-img" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-header-row">
+          <span class="card-ref"></span>
+          <span class="card-brand-badge"></span>
+        </div>
+        <h2 class="card-name"></h2>
+        <div class="card-tags">
+          <span class="tag tag-temp"></span>
+          <span class="tag tag-finish"></span>
+          <span class="tag tag-form"></span>
+        </div>
+        <p class="card-notes"></p>
+        <a class="card-link" target="_blank" rel="noopener">Voir le produit ↗</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
