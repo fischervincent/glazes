@@ -15,7 +15,7 @@ const FORM_LABELS = {
 
 const BRAND_SHORT = {
   'Brilliant Botz': 'Botz',
-  'Ceradel': 'Ceradel',
+  'Cigale & Fourmi': 'C&F',
   'Amaco': 'Amaco',
 };
 
