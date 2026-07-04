@@ -18,7 +18,8 @@
       "imageUrl": "photos/b9343.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2465-email-prepare-vert-bouteille-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": ""
+      "notes": "",
+      "tags": []
     },
     {
       "id": "b9352",
@@ -38,7 +39,8 @@
       "imageUrl": "photos/b9352.jpg",
       "productUrl": "https://ceradel.fr/en/products/b9352-botz-turquoise-craquele-200ml-1020-1060-c",
       "volume": "200 ml",
-      "notes": "1 coat only — runs strongly. Not for dinnerware. Darker flaky crackle appears on some clays."
+      "notes": "1 coat only — runs strongly. Not for dinnerware. Darker flaky crackle appears on some clays.",
+      "tags": ["craquelé"]
     },
     {
       "id": "b9529",
@@ -58,7 +60,8 @@
       "imageUrl": "photos/b9529.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/3534-email-prepare-a-effets-rose-cristal-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Crystal effect — pink efflorescences varying with piece geometry."
+      "notes": "Crystal effect — pink efflorescences varying with piece geometry.",
+      "tags": ["cristal"]
     },
     {
       "id": "b9541",
@@ -78,7 +81,8 @@
       "imageUrl": "photos/b9541.jpg",
       "productUrl": "https://ceradel.fr/en/products/email-brillant-botz-b9541-or",
       "volume": "200 ml",
-      "notes": ""
+      "notes": "",
+      "tags": ["métallique"]
     },
     {
       "id": "b9101",
@@ -98,7 +102,8 @@
       "imageUrl": "photos/b9101.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2453-email-prepare-blanc-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Food safe."
+      "notes": "Food safe.",
+      "tags": []
     },
     {
       "id": "b9531",
@@ -118,7 +123,8 @@
       "imageUrl": "photos/b9531.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/3540-email-prepare-a-effets-champ-d-hiver-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Winter field effect — blue-white crystalline surface. Not for dinnerware."
+      "notes": "Winter field effect — blue-white crystalline surface. Not for dinnerware.",
+      "tags": ["cristal"]
     },
     {
       "id": "b9533",
@@ -138,7 +144,8 @@
       "imageUrl": "photos/b9533.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2493-email-prepare-marron-lunaire-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Also known as Eisenstein (ironstone) in German."
+      "notes": "Also known as Eisenstein (ironstone) in German.",
+      "tags": []
     },
     {
       "id": "b9571",
@@ -158,7 +165,8 @@
       "imageUrl": "photos/b9571.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2949-email-prepare-pierre-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": ""
+      "notes": "",
+      "tags": []
     },
     {
       "id": "b9561",
@@ -178,7 +186,8 @@
       "imageUrl": "photos/b9561.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/3537-email-prepare-rose-pastel-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": ""
+      "notes": "",
+      "tags": []
     },
     {
       "id": "b9381",
@@ -198,7 +207,8 @@
       "imageUrl": "photos/b9381.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2475-email-prepare-bleu-royal-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": ""
+      "notes": "",
+      "tags": []
     },
     {
       "id": "b9540",
@@ -218,7 +228,8 @@
       "imageUrl": "photos/b9540.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2495-email-prepare-rosee-du-matin-satine-200-ml.html",
       "volume": "200 ml",
-      "notes": "Satin finish. Green-tinted leaf-shaped effects on champagne background."
+      "notes": "Satin finish. Green-tinted leaf-shaped effects on champagne background.",
+      "tags": ["cristal"]
     },
     {
       "id": "b9350",
@@ -238,7 +249,8 @@
       "imageUrl": "photos/b9350.jpg",
       "productUrl": "https://www.dietoepferei.com/products/botz-flussigglasur-sommerblau-9350",
       "volume": "200 ml",
-      "notes": "Fresh medium blue. Food safe."
+      "notes": "Fresh medium blue. Food safe.",
+      "tags": []
     },
     {
       "id": "c06004",
@@ -258,7 +270,8 @@
       "imageUrl": "photos/c06004.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-gres-en-poudre-1240c-1280c/630-email-gres-bleu-de-sevres-500g.html",
       "volume": "500 g",
-      "notes": "Grès & porcelaine."
+      "notes": "Grès & porcelaine.",
+      "tags": []
     },
     {
       "id": "c06001",
@@ -278,7 +291,8 @@
       "imageUrl": "photos/c06001.jpg",
       "productUrl": "https://lescousins.fr/product/email-gres-0-6001-bleu-mat/",
       "volume": "500 g",
-      "notes": "Grès & porcelaine. Matte finish."
+      "notes": "Grès & porcelaine. Matte finish.",
+      "tags": []
     },
     {
       "id": "vla3090",
@@ -298,7 +312,8 @@
       "imageUrl": "photos/vla3090.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/3195-email-vert-emeraude-sans-plomb-500-g.html",
       "volume": "500 g",
-      "notes": "Transparent emerald green. Lead-free."
+      "notes": "Transparent emerald green. Lead-free.",
+      "tags": []
     },
     {
       "id": "a1182",
@@ -318,7 +333,8 @@
       "imageUrl": "photos/a1182.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/1935-email-aventurine-sp-opaque-mat-500g.html",
       "volume": "500 g",
-      "notes": "Opaque matte aventurine. Lead-free."
+      "notes": "Opaque matte aventurine. Lead-free.",
+      "tags": ["métallique"]
     },
     {
       "id": "ef130",
@@ -338,7 +354,8 @@
       "imageUrl": "photos/ef130.jpg",
       "productUrl": "https://ceradel.fr/en/products/ef-130-vieil-argent",
       "volume": "500 g",
-      "notes": "Old silver effect. Apply thickly, 15-min hold at peak."
+      "notes": "Old silver effect. Apply thickly, 15-min hold at peak.",
+      "tags": ["métallique"]
     },
     {
       "id": "aeo4",
@@ -358,7 +375,8 @@
       "imageUrl": "photos/aeo4.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/898-email-blanc-brillant-craquele-sp-500g.html",
       "volume": "500 g",
-      "notes": "White crackle. Lead-free."
+      "notes": "White crackle. Lead-free.",
+      "tags": ["craquelé"]
     },
     {
       "id": "ef80",
@@ -378,7 +396,8 @@
       "imageUrl": "photos/ef80.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/1573-email-noir-granite-sans-plomb-500g.html",
       "volume": "500 g",
-      "notes": "Black granite effect. Lead-free."
+      "notes": "Black granite effect. Lead-free.",
+      "tags": ["granit"]
     },
     {
       "id": "t110b",
@@ -398,7 +417,8 @@
       "imageUrl": "photos/t110b.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/1621-email-mauve-clair-sans-plomb-500g.html",
       "volume": "500 g",
-      "notes": "Transparent light mauve. Lead-free. 20-min hold at peak."
+      "notes": "Transparent light mauve. Lead-free. 20-min hold at peak.",
+      "tags": []
     },
     {
       "id": "ao449",
@@ -418,7 +438,8 @@
       "imageUrl": "photos/ao449.jpg",
       "productUrl": "https://ceradel.fr/products/email-brillant-semi-opaque-faience-ceradel-ao-449-bleu-de-sevres",
       "volume": "500 g",
-      "notes": "Semi-opaque. Lead-free."
+      "notes": "Semi-opaque. Lead-free.",
+      "tags": []
     },
     {
       "id": "t500w",
@@ -438,7 +459,8 @@
       "imageUrl": "photos/t500w.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/861-email-rouge-coquelicot-cadmium-sp-500g.html",
       "volume": "500 g",
-      "notes": "Opaque poppy red. Cadmium-selenium. Lead-free."
+      "notes": "Opaque poppy red. Cadmium-selenium. Lead-free.",
+      "tags": []
     },
     {
       "id": "cr1",
@@ -458,7 +480,8 @@
       "imageUrl": "photos/cr1.jpg",
       "productUrl": "https://shop.amaco.com/cr-1-black/",
       "volume": "472 ml",
-      "notes": "Cone 5–6. Crawl glaze — fires into raised organic shapes."
+      "notes": "Cone 5–6. Crawl glaze — fires into raised organic shapes.",
+      "tags": ["crawl", "superposition"]
     },
     {
       "id": "cr18",
@@ -478,7 +501,8 @@
       "imageUrl": "photos/cr18.jpg",
       "productUrl": "https://shop.amaco.com/cr-18-speckled-flux-crawl/",
       "volume": "472 ml",
-      "notes": "Cone 5–6. Glossy blush with black specks. Crawls when fired — great for layering."
+      "notes": "Cone 5–6. Glossy blush with black specks. Crawls when fired — great for layering.",
+      "tags": ["crawl", "superposition"]
     },
     {
       "id": "pcf3",
@@ -498,7 +522,8 @@
       "imageUrl": "photos/pcf3.jpg",
       "productUrl": "https://shop.amaco.com/pcf-3-blue-midnight/",
       "volume": "472 ml",
-      "notes": "Cone 5–6. Velvety dark blue-gray. Breaks dark on texture. Potter's Choice Flux."
+      "notes": "Cone 5–6. Velvety dark blue-gray. Breaks dark on texture. Potter's Choice Flux.",
+      "tags": ["superposition"]
     },
     {
       "id": "pc27",
@@ -518,7 +543,8 @@
       "imageUrl": "photos/pc27.jpg",
       "productUrl": "https://shop.amaco.com/pc-27-tourmaline/",
       "volume": "472 ml",
-      "notes": "Cone 5–6. Intense opaque blue-green. Food safe. Potter's Choice."
+      "notes": "Cone 5–6. Intense opaque blue-green. Food safe. Potter's Choice.",
+      "tags": []
     },
     {
       "id": "pc53",
@@ -538,7 +564,8 @@
       "imageUrl": "photos/pc53.jpg",
       "productUrl": "https://shop.amaco.com/pc-53-ancient-jasper/",
       "volume": "472 ml",
-      "notes": "Cone 5–6. Transitions black → olive → rust with thickness. Potter's Choice."
+      "notes": "Cone 5–6. Transitions black → olive → rust with thickness. Potter's Choice.",
+      "tags": ["effet"]
     },
     {
       "id": "c50",
@@ -558,7 +585,8 @@
       "imageUrl": "photos/c50.jpg",
       "productUrl": "https://www.clayscapespottery.com/products/amaco-cone-5-6-celadon-cherry-blossom-c-50",
       "volume": "472 ml",
-      "notes": "Cone 5–6. Soft blushing pink celadon. Pools and accents texture. Mixable."
+      "notes": "Cone 5–6. Soft blushing pink celadon. Pools and accents texture. Mixable.",
+      "tags": []
     }
   ]
 }
