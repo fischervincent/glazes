@@ -225,7 +225,7 @@ main {
   overflow: hidden;
   flex-shrink: 0;
   border-radius: var(--radius) var(--radius) 0 0;
-  cursor: crosshair;
+  cursor: zoom-in;
 }
 
 .mode-picture .card-swatch { height: 180px; }
@@ -303,6 +303,12 @@ main {
   background: var(--bg);
   color: var(--text-muted);
   border: 1px solid var(--border);
+}
+
+.tag-type {
+  background: rgba(42, 31, 20, 0.07);
+  color: var(--accent);
+  border-color: rgba(42, 31, 20, 0.2);
 }
 
 .card-link {

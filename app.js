@@ -57,11 +57,12 @@ function buildCard(glaze) {
     img.addEventListener('load', () => { img.dataset.loaded = 'true'; });
     img.addEventListener('error', () => { img.remove(); });
 
+    let swatchRect = null;
+    swatch.addEventListener('mouseenter', () => { swatchRect = swatch.getBoundingClientRect(); });
     swatch.addEventListener('mousemove', e => {
-      if (img.dataset.loaded !== 'true') return;
-      const rect = swatch.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      if (!swatchRect || img.dataset.loaded !== 'true') return;
+      const x = ((e.clientX - swatchRect.left) / swatchRect.width) * 100;
+      const y = ((e.clientY - swatchRect.top) / swatchRect.height) * 100;
       img.style.transformOrigin = `${x}% ${y}%`;
     });
   } else {
@@ -74,6 +75,14 @@ function buildCard(glaze) {
   card.querySelector('.tag-temp').textContent = formatTemp(glaze);
   card.querySelector('.tag-finish').textContent = FINISH_LABELS[glaze.finish] ?? glaze.finish;
   card.querySelector('.tag-form').textContent = FORM_LABELS[glaze.form] ?? glaze.form;
+
+  const cardTags = card.querySelector('.card-tags');
+  glaze.tags.forEach(tag => {
+    const span = document.createElement('span');
+    span.className = 'tag tag-type';
+    span.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+    cardTags.appendChild(span);
+  });
 
   const notes = card.querySelector('.card-notes');
   if (glaze.notes) {
@@ -105,7 +114,7 @@ function render() {
     if (filters.form !== 'all' && g.form !== filters.form) return false;
     if (filters.color !== 'all' && g.colorFamily !== filters.color) return false;
     if (selectedTags.size > 0 && !g.tags.some(t => selectedTags.has(t))) return false;
-    if (q && !`${g.name} ${g.notes} ${g.reference}`.toLowerCase().includes(q)) return false;
+    if (q && !`${g.name} ${g.notes} ${g.reference} ${g.tags.join(' ')}`.toLowerCase().includes(q)) return false;
     return true;
   });
 
@@ -115,7 +124,9 @@ function render() {
     `${filtered.length} / ${allGlazes.length} émaux`;
 
   emptyState.hidden = filtered.length > 0;
-  filtered.forEach(g => grid.appendChild(buildCard(g)));
+  const fragment = document.createDocumentFragment();
+  filtered.forEach(g => fragment.appendChild(buildCard(g)));
+  grid.appendChild(fragment);
 }
 
 function setupFilters() {
