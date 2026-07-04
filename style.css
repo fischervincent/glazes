@@ -241,7 +241,7 @@ main {
 
 .card-img[data-loaded="false"] { opacity: 0; }
 
-.card-swatch:hover .card-img[data-loaded="true"] { transform: scale(1.25); }
+.card-swatch:hover .card-img[data-loaded="true"] { transform: scale(1.7); }
 
 .card-body {
   padding: 12px 14px 14px;
