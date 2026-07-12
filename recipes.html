@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes — Ma Collection d'Émaux</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Glazes</a>
+        <a href="recipes.html" class="nav-link active">Recipes</a>
+      </nav>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <!-- ── List view ── -->
+  <div id="list-view">
+    <div class="page-toolbar">
+      <h2 class="page-title">Recipes</h2>
+      <span id="recipe-count" class="count-badge"></span>
+      <div class="header-spacer"></div>
+      <button id="new-recipe-btn" class="btn-primary">+ New Recipe</button>
+    </div>
+    <main>
+      <div id="recipes-container" class="recipes-grid"></div>
+      <p id="no-recipes" class="empty-state" hidden>No recipes yet — click "New Recipe" to get started.</p>
+    </main>
+  </div>
+
+  <!-- ── Editor view ── -->
+  <div id="editor-view" hidden>
+    <div class="editor-topbar">
+      <button id="cancel-btn" class="btn-ghost">← Back</button>
+      <span id="editor-title" class="editor-heading">New Recipe</span>
+      <div class="header-spacer"></div>
+      <button id="save-btn" class="btn-primary">Save Recipe</button>
+    </div>
+
+    <div class="editor-layout">
+
+      <!-- Left: form + selected glazes -->
+      <div class="editor-panel">
+        <label class="field-label" for="recipe-name-input">Name</label>
+        <input type="text" id="recipe-name-input" class="field-input" placeholder="e.g. Royal Blue crackle base">
+
+        <label class="field-label" for="recipe-notes-input">Notes</label>
+        <textarea id="recipe-notes-input" class="field-textarea" rows="6"
+          placeholder="Application order, layer thickness, firing notes…"></textarea>
+
+        <label class="field-label">Selected glazes</label>
+        <div id="selected-preview" class="selected-preview">
+          <p class="preview-hint">Click glazes on the right to add them</p>
+        </div>
+      </div>
+
+      <!-- Right: glaze selector -->
+      <div class="editor-selector">
+        <div class="filters-bar">
+          <div class="search-wrap">
+            <input type="search" id="sel-search" class="search-input" placeholder="Search…" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="filter-group">
+            <label>Brand</label>
+            <div class="chips" id="sel-filter-brand">
+              <button class="chip active" data-value="all">All</button>
+              <button class="chip" data-value="Brilliant Botz">Botz</button>
+              <button class="chip" data-value="Cigale & Fourmi">C&amp;F</button>
+              <button class="chip" data-value="Amaco">Amaco</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Temp</label>
+            <div class="chips" id="sel-filter-temp">
+              <button class="chip active" data-value="all">All</button>
+              <button class="chip" data-value="faience">Faïence</button>
+              <button class="chip" data-value="gres">Grès</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Form</label>
+            <div class="chips" id="sel-filter-form">
+              <button class="chip active" data-value="all">All</button>
+              <button class="chip" data-value="liquid">Liquid</button>
+              <button class="chip" data-value="powder">Powder</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Colour</label>
+            <div class="chips" id="sel-filter-color">
+              <button class="chip active" data-value="all">All</button>
+              <button class="chip color-chip" data-value="white" style="--swatch:#f2f2ee">White</button>
+              <button class="chip color-chip" data-value="pink" style="--swatch:#e8aabb">Pink</button>
+              <button class="chip color-chip" data-value="red" style="--swatch:#cc2828">Red</button>
+              <button class="chip color-chip" data-value="purple" style="--swatch:#b090c0">Purple</button>
+              <button class="chip color-chip" data-value="blue" style="--swatch:#1a3a8c">Blue</button>
+              <button class="chip color-chip" data-value="turquoise" style="--swatch:#2a9898">Turquoise</button>
+              <button class="chip color-chip" data-value="green" style="--swatch:#1a7850">Green</button>
+              <button class="chip color-chip" data-value="gold" style="--swatch:#c8a830">Gold</button>
+              <button class="chip color-chip" data-value="brown" style="--swatch:#6a5030">Brown</button>
+              <button class="chip color-chip" data-value="gray" style="--swatch:#909090">Gray</button>
+              <button class="chip color-chip" data-value="black" style="--swatch:#2a2a28">Black</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Type</label>
+            <div class="chips" id="sel-filter-type">
+              <button class="chip active" data-value="all">All</button>
+              <button class="chip" data-value="superposition">Superposition</button>
+              <button class="chip" data-value="crawl">Crawl</button>
+              <button class="chip" data-value="cristal">Cristal</button>
+              <button class="chip" data-value="craquelé">Craquelé</button>
+              <button class="chip" data-value="métallique">Métallique</button>
+              <button class="chip" data-value="granit">Granit</button>
+              <button class="chip" data-value="effet">Effet</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid selector-grid" id="selector-grid"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="recipes.js"></script>
+</body>
+</html>

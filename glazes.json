@@ -40,8 +40,7 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2469-email-prepare-bleu-turquoise-craquele-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "1 coat only — runs strongly. Not for dinnerware. Darker flaky crackle appears on some clays.",
-      "tags": ["craquelé"],
-      "owned": false
+      "tags": ["craquelé"]
     },
     {
       "id": "b9529",
@@ -592,7 +591,7 @@
     {
       "id": "rouge-cristal",
       "name": "Red Crystal",
-      "reference": "B9???",
+      "reference": "B9594",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -607,14 +606,13 @@
       "imageUrl": "photos/rouge-cristal.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2645-email-prepare-rouge-cristallise-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Crystal effect — red efflorescences. Update reference when bottle arrives.",
-      "tags": ["cristal"],
-      "owned": false
+      "notes": "Crystal effect — red efflorescences.",
+      "tags": ["cristal"]
     },
     {
       "id": "rouge-corail",
       "name": "Coral Red",
-      "reference": "B9???",
+      "reference": "B9607",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -629,14 +627,13 @@
       "imageUrl": "photos/rouge-corail.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2638-email-prepare-rouge-corail-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Update reference when bottle arrives.",
-      "tags": [],
-      "owned": false
+      "notes": "",
+      "tags": []
     },
     {
       "id": "rouge-mat",
       "name": "Matte Red",
-      "reference": "B9???",
+      "reference": "B9612",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -651,14 +648,13 @@
       "imageUrl": "photos/rouge-mat.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2640-email-prepare-rouge-mat-200-ml.html",
       "volume": "200 ml",
-      "notes": "Update reference when bottle arrives.",
-      "tags": [],
-      "owned": false
+      "notes": "",
+      "tags": []
     },
     {
       "id": "jaune-flamboyant",
       "name": "Flamboyant Yellow",
-      "reference": "B9???",
+      "reference": "B9596",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -673,14 +669,13 @@
       "imageUrl": "photos/jaune-flamboyant.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2646-email-prepare-jaune-flamboyant-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Update reference when bottle arrives.",
-      "tags": [],
-      "owned": false
+      "notes": "",
+      "tags": []
     },
     {
       "id": "brun-miel",
       "name": "Brun Miel",
-      "reference": "???",
+      "reference": "VLA3077",
       "brand": "Cigale & Fourmi",
       "supplier": "Cigale et Fourmi",
       "form": "powder",
@@ -695,14 +690,13 @@
       "imageUrl": "photos/brun-miel.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/677-email-brun-miel-sans-plomb-500-g.html",
       "volume": "500 g",
-      "notes": "Honey brown. Update reference when bag arrives.",
-      "tags": [],
-      "owned": false
+      "notes": "Honey brown.",
+      "tags": []
     },
     {
       "id": "couverte-transp",
       "name": "Transparent Cover",
-      "reference": "B9???",
+      "reference": "B9106",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -717,14 +711,13 @@
       "imageUrl": "photos/couverte-transp.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2460-email-prepare-couverte-transparente-200-ml.html",
       "volume": "200 ml",
-      "notes": "Transparent cover glaze for layering over any base. Update reference when bottle arrives.",
-      "tags": ["superposition"],
-      "owned": false
+      "notes": "Transparent cover glaze for layering over any base.",
+      "tags": ["superposition"]
     },
     {
       "id": "bleu-topaze",
       "name": "Topaz Blue",
-      "reference": "B9???",
+      "reference": "B9311",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -739,14 +732,13 @@
       "imageUrl": "photos/bleu-topaze.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-liquides-botz-pro-pour-cuisson-entre-1020c-et-1280c/4035-email-prepare-botz-pro-bleu-topaze-800-ml.html",
       "volume": "800 ml",
-      "notes": "Botz Pro — fires anywhere from 1020°C to 1280°C. Update reference when bottle arrives.",
-      "tags": [],
-      "owned": false
+      "notes": "Botz Pro — fires anywhere from 1020°C to 1280°C.",
+      "tags": []
     },
     {
       "id": "mouchete",
       "name": "Speckled Transparent",
-      "reference": "B9???",
+      "reference": "B9450",
       "brand": "Brilliant Botz",
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
@@ -761,9 +753,8 @@
       "imageUrl": "photos/mouchete.jpg",
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2476-email-prepare-mouchete-transparent-brillant-200-ml.html",
       "volume": "200 ml",
-      "notes": "Transparent with dark speckles. Apply over a base glaze for stone/granite texture. Update reference when bottle arrives.",
-      "tags": [],
-      "owned": false
+      "notes": "Transparent with dark speckles. Apply over a base glaze for stone/granite texture.",
+      "tags": []
     }
   ]
 }
