@@ -268,11 +268,11 @@ function renderSelectorGrid() {
     if (selFilters.brand !== 'all' && g.brand !== selFilters.brand) return false;
     if (selFilters.temp !== 'all' && g.tempCategory !== selFilters.temp) return false;
     if (selFilters.form !== 'all' && g.form !== selFilters.form) return false;
-    if (selColors.size > 0 && !selColors.has(g.colorFamily)) return false;
+    if (selColors.size > 0 && !g.colorFamilies.some(c => selColors.has(c))) return false;
     if (selTags.size > 0 && !g.tags.some(t => selTags.has(t))) return false;
     if (q && !`${g.name} ${g.notes} ${g.reference} ${g.tags.join(' ')}`.toLowerCase().includes(q)) return false;
     return true;
-  }).sort((a, b) => COLOR_ORDER.indexOf(a.colorFamily) - COLOR_ORDER.indexOf(b.colorFamily));
+  }).sort((a, b) => COLOR_ORDER.indexOf(a.colorFamilies[0]) - COLOR_ORDER.indexOf(b.colorFamilies[0]));
 
   const frag = document.createDocumentFragment();
   filtered.forEach(g => frag.appendChild(buildSelectorCard(g)));

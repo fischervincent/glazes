@@ -114,13 +114,13 @@ function render() {
     if (filters.brand !== 'all' && g.brand !== filters.brand) return false;
     if (filters.temp !== 'all' && g.tempCategory !== filters.temp) return false;
     if (filters.form !== 'all' && g.form !== filters.form) return false;
-    if (selectedColors.size > 0 && !selectedColors.has(g.colorFamily)) return false;
+    if (selectedColors.size > 0 && !g.colorFamilies.some(c => selectedColors.has(c))) return false;
     if (selectedTags.size > 0 && !g.tags.some(t => selectedTags.has(t))) return false;
     if (q && !`${g.name} ${g.notes} ${g.reference} ${g.tags.join(' ')}`.toLowerCase().includes(q)) return false;
     return true;
   });
 
-  filtered.sort((a, b) => COLOR_ORDER.indexOf(a.colorFamily) - COLOR_ORDER.indexOf(b.colorFamily));
+  filtered.sort((a, b) => COLOR_ORDER.indexOf(a.colorFamilies[0]) - COLOR_ORDER.indexOf(b.colorFamilies[0]));
 
   document.getElementById('count-badge').textContent =
     `${filtered.length} / ${allGlazes.length} émaux`;

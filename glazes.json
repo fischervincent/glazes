@@ -8,7 +8,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "green",
       "colorHex": "#1e4d2b",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -19,7 +18,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2465-email-prepare-vert-bouteille-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "green"
+      ]
     },
     {
       "id": "b9352",
@@ -29,7 +31,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "crackle",
-      "colorFamily": "turquoise",
       "colorHex": "#2a9898",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -40,7 +41,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2469-email-prepare-bleu-turquoise-craquele-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "1 coat only — runs strongly. Not for dinnerware. Darker flaky crackle appears on some clays.",
-      "tags": ["craquelé"]
+      "tags": [
+        "craquelé"
+      ],
+      "colorFamilies": [
+        "turquoise"
+      ]
     },
     {
       "id": "b9529",
@@ -50,7 +56,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "effect",
-      "colorFamily": "pink",
       "colorHex": "#e8aabb",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -61,7 +66,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/3534-email-prepare-a-effets-rose-cristal-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "Crystal effect — pink efflorescences varying with piece geometry.",
-      "tags": ["cristal"]
+      "tags": [
+        "cristal"
+      ],
+      "colorFamilies": [
+        "pink"
+      ]
     },
     {
       "id": "b9541",
@@ -71,7 +81,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "gold",
       "colorHex": "#c8a830",
       "tempMin": 1020,
       "tempMax": 1040,
@@ -82,7 +91,12 @@
       "productUrl": "https://ceradel.fr/en/products/email-brillant-botz-b9541-or",
       "volume": "200 ml",
       "notes": "",
-      "tags": ["métallique"]
+      "tags": [
+        "métallique"
+      ],
+      "colorFamilies": [
+        "gold"
+      ]
     },
     {
       "id": "b9101",
@@ -92,7 +106,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "white",
       "colorHex": "#f2f2ee",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -103,7 +116,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2453-email-prepare-blanc-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "Food safe.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "white"
+      ]
     },
     {
       "id": "b9531",
@@ -113,7 +129,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "effect",
-      "colorFamily": "white",
       "colorHex": "#e8e4d8",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -124,7 +139,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/3540-email-prepare-a-effets-champ-d-hiver-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "Winter field effect — blue-white crystalline surface. Not for dinnerware.",
-      "tags": ["cristal"]
+      "tags": [
+        "cristal"
+      ],
+      "colorFamilies": [
+        "gray"
+      ]
     },
     {
       "id": "b9533",
@@ -134,7 +154,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "brown",
       "colorHex": "#5a4a3a",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -145,7 +164,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2493-email-prepare-marron-lunaire-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "Also known as Eisenstein (ironstone) in German.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "brown"
+      ]
     },
     {
       "id": "b9571",
@@ -155,7 +177,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "gray",
       "colorHex": "#8a8678",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -166,7 +187,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2949-email-prepare-pierre-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "gray"
+      ]
     },
     {
       "id": "b9561",
@@ -176,7 +200,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "pink",
       "colorHex": "#f0c0c8",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -187,7 +210,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/3537-email-prepare-rose-pastel-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "pink"
+      ]
     },
     {
       "id": "b9381",
@@ -197,7 +223,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "blue",
       "colorHex": "#1a3a8c",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -208,7 +233,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2475-email-prepare-bleu-royal-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "b9540",
@@ -218,7 +246,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "satin",
-      "colorFamily": "white",
       "colorHex": "#d0e8d8",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -229,7 +256,13 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2495-email-prepare-rosee-du-matin-satine-200-ml.html",
       "volume": "200 ml",
       "notes": "Satin finish. Green-tinted leaf-shaped effects on champagne background.",
-      "tags": ["cristal"]
+      "tags": [
+        "cristal"
+      ],
+      "colorFamilies": [
+        "white",
+        "green"
+      ]
     },
     {
       "id": "b9350",
@@ -239,7 +272,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "blue",
       "colorHex": "#4a8abc",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -250,7 +282,10 @@
       "productUrl": "https://www.dietoepferei.com/products/botz-flussigglasur-sommerblau-9350",
       "volume": "200 ml",
       "notes": "Fresh medium blue. Food safe.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "c06004",
@@ -260,7 +295,6 @@
       "supplier": "Cigale & Fourmi",
       "form": "powder",
       "finish": "glossy",
-      "colorFamily": "blue",
       "colorHex": "#4472a0",
       "tempMin": 1230,
       "tempMax": 1300,
@@ -271,7 +305,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-gres-en-poudre-1240c-1280c/630-email-gres-bleu-de-sevres-500g.html",
       "volume": "500 g",
       "notes": "Grès & porcelaine.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "c06001",
@@ -281,7 +318,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "matte",
-      "colorFamily": "blue",
       "colorHex": "#3a5878",
       "tempMin": 1260,
       "tempMax": 1280,
@@ -292,7 +328,10 @@
       "productUrl": "https://lescousins.fr/product/email-gres-0-6001-bleu-mat/",
       "volume": "500 g",
       "notes": "Grès & porcelaine. Matte finish.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "vla3090",
@@ -302,7 +341,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "glossy",
-      "colorFamily": "green",
       "colorHex": "#1a7850",
       "tempMin": 950,
       "tempMax": 1010,
@@ -313,7 +351,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/3195-email-vert-emeraude-sans-plomb-500-g.html",
       "volume": "500 g",
       "notes": "Transparent emerald green. Lead-free.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "green"
+      ]
     },
     {
       "id": "a1182",
@@ -323,7 +364,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "matte",
-      "colorFamily": "brown",
       "colorHex": "#6a5030",
       "tempMin": 950,
       "tempMax": 1010,
@@ -334,7 +374,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/1935-email-aventurine-sp-opaque-mat-500g.html",
       "volume": "500 g",
       "notes": "Opaque matte aventurine. Lead-free.",
-      "tags": ["métallique"]
+      "tags": [
+        "métallique"
+      ],
+      "colorFamilies": [
+        "brown"
+      ]
     },
     {
       "id": "ef130",
@@ -344,7 +389,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "effect",
-      "colorFamily": "gray",
       "colorHex": "#909090",
       "tempMin": 990,
       "tempMax": 1050,
@@ -355,7 +399,12 @@
       "productUrl": "https://ceradel.fr/en/products/ef-130-vieil-argent",
       "volume": "500 g",
       "notes": "Old silver effect. Apply thickly, 15-min hold at peak.",
-      "tags": ["métallique"]
+      "tags": [
+        "métallique"
+      ],
+      "colorFamilies": [
+        "gray"
+      ]
     },
     {
       "id": "aeo4",
@@ -365,7 +414,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "crackle",
-      "colorFamily": "white",
       "colorHex": "#eeeeea",
       "tempMin": 1000,
       "tempMax": 1020,
@@ -376,7 +424,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/898-email-blanc-brillant-craquele-sp-500g.html",
       "volume": "500 g",
       "notes": "White crackle. Lead-free.",
-      "tags": ["craquelé"]
+      "tags": [
+        "craquelé"
+      ],
+      "colorFamilies": [
+        "white"
+      ]
     },
     {
       "id": "ef80",
@@ -386,7 +439,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "effect",
-      "colorFamily": "black",
       "colorHex": "#2a2a28",
       "tempMin": 990,
       "tempMax": 1050,
@@ -397,7 +449,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/1573-email-noir-granite-sans-plomb-500g.html",
       "volume": "500 g",
       "notes": "Black granite effect. Lead-free.",
-      "tags": ["granit"]
+      "tags": [
+        "granit"
+      ],
+      "colorFamilies": [
+        "black"
+      ]
     },
     {
       "id": "t110b",
@@ -407,7 +464,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "glossy",
-      "colorFamily": "purple",
       "colorHex": "#b090c0",
       "tempMin": 980,
       "tempMax": 1000,
@@ -418,7 +474,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/1621-email-mauve-clair-sans-plomb-500g.html",
       "volume": "500 g",
       "notes": "Transparent light mauve. Lead-free. 20-min hold at peak.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "purple"
+      ]
     },
     {
       "id": "ao449",
@@ -428,7 +487,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "glossy",
-      "colorFamily": "blue",
       "colorHex": "#5082a8",
       "tempMin": 950,
       "tempMax": 1010,
@@ -439,7 +497,10 @@
       "productUrl": "https://ceradel.fr/products/email-brillant-semi-opaque-faience-ceradel-ao-449-bleu-de-sevres",
       "volume": "500 g",
       "notes": "Semi-opaque. Lead-free.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "t500w",
@@ -449,7 +510,6 @@
       "supplier": "Ceradel",
       "form": "powder",
       "finish": "glossy",
-      "colorFamily": "red",
       "colorHex": "#cc2828",
       "tempMin": 1000,
       "tempMax": 1020,
@@ -460,7 +520,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/861-email-rouge-coquelicot-cadmium-sp-500g.html",
       "volume": "500 g",
       "notes": "Opaque poppy red. Cadmium-selenium. Lead-free.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "red"
+      ]
     },
     {
       "id": "cr1",
@@ -470,7 +533,6 @@
       "supplier": "Ceradel",
       "form": "liquid",
       "finish": "effect",
-      "colorFamily": "black",
       "colorHex": "#1c1c1c",
       "tempMin": 1196,
       "tempMax": 1240,
@@ -481,7 +543,13 @@
       "productUrl": "https://shop.amaco.com/cr-1-black/",
       "volume": "472 ml",
       "notes": "Cone 5–6. Crawl glaze — fires into raised organic shapes.",
-      "tags": ["crawl", "superposition"]
+      "tags": [
+        "crawl",
+        "superposition"
+      ],
+      "colorFamilies": [
+        "black"
+      ]
     },
     {
       "id": "cr18",
@@ -491,7 +559,6 @@
       "supplier": "Ceradel",
       "form": "liquid",
       "finish": "effect",
-      "colorFamily": "white",
       "colorHex": "#d8c8b8",
       "tempMin": 1196,
       "tempMax": 1240,
@@ -502,7 +569,13 @@
       "productUrl": "https://shop.amaco.com/cr-18-speckled-flux-crawl/",
       "volume": "472 ml",
       "notes": "Cone 5–6. Glossy blush with black specks. Crawls when fired — great for layering.",
-      "tags": ["crawl", "superposition"]
+      "tags": [
+        "crawl",
+        "superposition"
+      ],
+      "colorFamilies": [
+        "white"
+      ]
     },
     {
       "id": "pcf3",
@@ -512,7 +585,6 @@
       "supplier": "Ceradel",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "blue",
       "colorHex": "#1a2040",
       "tempMin": 1196,
       "tempMax": 1240,
@@ -523,7 +595,12 @@
       "productUrl": "https://shop.amaco.com/pcf-3-blue-midnight/",
       "volume": "472 ml",
       "notes": "Cone 5–6. Velvety dark blue-gray. Breaks dark on texture. Potter's Choice Flux.",
-      "tags": ["superposition"]
+      "tags": [
+        "superposition"
+      ],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "pc27",
@@ -533,7 +610,6 @@
       "supplier": "Ceradel",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "turquoise",
       "colorHex": "#2a6878",
       "tempMin": 1196,
       "tempMax": 1240,
@@ -544,7 +620,10 @@
       "productUrl": "https://shop.amaco.com/pc-27-tourmaline/",
       "volume": "472 ml",
       "notes": "Cone 5–6. Intense opaque blue-green. Food safe. Potter's Choice.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "turquoise"
+      ]
     },
     {
       "id": "pc53",
@@ -554,7 +633,6 @@
       "supplier": "Ceradel",
       "form": "liquid",
       "finish": "effect",
-      "colorFamily": "brown",
       "colorHex": "#5a4028",
       "tempMin": 1196,
       "tempMax": 1240,
@@ -565,7 +643,12 @@
       "productUrl": "https://shop.amaco.com/pc-53-ancient-jasper/",
       "volume": "472 ml",
       "notes": "Cone 5–6. Transitions black → olive → rust with thickness. Potter's Choice.",
-      "tags": ["effet"]
+      "tags": [
+        "effet"
+      ],
+      "colorFamilies": [
+        "brown"
+      ]
     },
     {
       "id": "c50",
@@ -575,7 +658,6 @@
       "supplier": "Ceradel",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "pink",
       "colorHex": "#e8b0b8",
       "tempMin": 1196,
       "tempMax": 1240,
@@ -586,7 +668,10 @@
       "productUrl": "https://www.clayscapespottery.com/products/amaco-cone-5-6-celadon-cherry-blossom-c-50",
       "volume": "472 ml",
       "notes": "Cone 5–6. Soft blushing pink celadon. Pools and accents texture. Mixable.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "pink"
+      ]
     },
     {
       "id": "rouge-cristal",
@@ -596,7 +681,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "effect",
-      "colorFamily": "red",
       "colorHex": "#cc2428",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -607,7 +691,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2645-email-prepare-rouge-cristallise-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "Crystal effect — red efflorescences.",
-      "tags": ["cristal"]
+      "tags": [
+        "cristal"
+      ],
+      "colorFamilies": [
+        "red"
+      ]
     },
     {
       "id": "rouge-corail",
@@ -617,7 +706,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "red",
       "colorHex": "#e05640",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -628,7 +716,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2638-email-prepare-rouge-corail-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "red"
+      ]
     },
     {
       "id": "rouge-mat",
@@ -638,7 +729,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "matte",
-      "colorFamily": "red",
       "colorHex": "#b82020",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -649,7 +739,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2640-email-prepare-rouge-mat-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "red"
+      ]
     },
     {
       "id": "jaune-flamboyant",
@@ -659,7 +752,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "yellow",
       "colorHex": "#f0b818",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -670,7 +762,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2646-email-prepare-jaune-flamboyant-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "yellow"
+      ]
     },
     {
       "id": "brun-miel",
@@ -680,7 +775,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "powder",
       "finish": "glossy",
-      "colorFamily": "yellow",
       "colorHex": "#d4a830",
       "tempMin": 950,
       "tempMax": 1080,
@@ -691,7 +785,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-en-poudre-940c-1080c/677-email-brun-miel-sans-plomb-500-g.html",
       "volume": "500 g",
       "notes": "Honey brown.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "yellow"
+      ]
     },
     {
       "id": "couverte-transp",
@@ -701,7 +798,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "white",
       "colorHex": "#f0ede8",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -712,7 +808,12 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2460-email-prepare-couverte-transparente-200-ml.html",
       "volume": "200 ml",
       "notes": "Transparent cover glaze for layering over any base.",
-      "tags": ["superposition"]
+      "tags": [
+        "superposition"
+      ],
+      "colorFamilies": [
+        "white"
+      ]
     },
     {
       "id": "bleu-topaze",
@@ -722,7 +823,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "blue",
       "colorHex": "#1870b8",
       "tempMin": 1020,
       "tempMax": 1280,
@@ -733,7 +833,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-liquides-botz-pro-pour-cuisson-entre-1020c-et-1280c/4035-email-prepare-botz-pro-bleu-topaze-800-ml.html",
       "volume": "800 ml",
       "notes": "Botz Pro — fires anywhere from 1020°C to 1280°C.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "blue"
+      ]
     },
     {
       "id": "mouchete",
@@ -743,7 +846,6 @@
       "supplier": "Cigale et Fourmi",
       "form": "liquid",
       "finish": "glossy",
-      "colorFamily": "white",
       "colorHex": "#dedad4",
       "tempMin": 1020,
       "tempMax": 1060,
@@ -754,7 +856,10 @@
       "productUrl": "https://www.cigaleetfourmi.fr/emaux-faience-liquides-botz-1020c-1060c/2476-email-prepare-mouchete-transparent-brillant-200-ml.html",
       "volume": "200 ml",
       "notes": "Transparent with dark speckles. Apply over a base glaze for stone/granite texture.",
-      "tags": []
+      "tags": [],
+      "colorFamilies": [
+        "white"
+      ]
     }
   ]
 }
