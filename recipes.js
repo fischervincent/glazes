@@ -1,9 +1,10 @@
 const STORAGE_KEY = 'glaze-recipes';
-const COLOR_ORDER = ['white','pink','red','purple','blue','turquoise','green','gold','brown','gray','black'];
+const COLOR_ORDER = ['white','pink','red','purple','blue','turquoise','green','yellow','gold','brown','gray','black'];
 
 let allGlazes = [];
 let recipes = [];
-let selFilters = { brand: 'all', temp: 'all', form: 'all', color: 'all' };
+let selFilters = { brand: 'all', temp: 'all', form: 'all' };
+let selColors = new Set();
 let selTags = new Set();
 let selSearch = '';
 let selectedIds = new Set();
@@ -267,7 +268,7 @@ function renderSelectorGrid() {
     if (selFilters.brand !== 'all' && g.brand !== selFilters.brand) return false;
     if (selFilters.temp !== 'all' && g.tempCategory !== selFilters.temp) return false;
     if (selFilters.form !== 'all' && g.form !== selFilters.form) return false;
-    if (selFilters.color !== 'all' && g.colorFamily !== selFilters.color) return false;
+    if (selColors.size > 0 && !selColors.has(g.colorFamily)) return false;
     if (selTags.size > 0 && !g.tags.some(t => selTags.has(t))) return false;
     if (q && !`${g.name} ${g.notes} ${g.reference} ${g.tags.join(' ')}`.toLowerCase().includes(q)) return false;
     return true;
@@ -351,7 +352,7 @@ function renderSelectedPreview() {
 }
 
 function setupSelectorFilters() {
-  const map = { 'sel-filter-brand': 'brand', 'sel-filter-temp': 'temp', 'sel-filter-form': 'form', 'sel-filter-color': 'color' };
+  const map = { 'sel-filter-brand': 'brand', 'sel-filter-temp': 'temp', 'sel-filter-form': 'form' };
 
   Object.entries(map).forEach(([elId, key]) => {
     document.getElementById(elId).addEventListener('click', e => {
@@ -368,6 +369,30 @@ function setupSelectorFilters() {
       }
       renderSelectorGrid();
     });
+  });
+
+  document.getElementById('sel-filter-color').addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    const value = chip.dataset.value;
+    if (value === 'all') {
+      selColors.clear();
+      document.querySelectorAll('#sel-filter-color .chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+    } else {
+      document.querySelector('#sel-filter-color [data-value="all"]').classList.remove('active');
+      if (chip.classList.contains('active')) {
+        chip.classList.remove('active');
+        selColors.delete(value);
+        if (selColors.size === 0) {
+          document.querySelector('#sel-filter-color [data-value="all"]').classList.add('active');
+        }
+      } else {
+        chip.classList.add('active');
+        selColors.add(value);
+      }
+    }
+    renderSelectorGrid();
   });
 
   document.getElementById('sel-filter-type').addEventListener('click', e => {

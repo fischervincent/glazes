@@ -1,4 +1,4 @@
-const COLOR_ORDER = ['white','pink','red','purple','blue','turquoise','green','gold','brown','gray','black'];
+const COLOR_ORDER = ['white','pink','red','purple','blue','turquoise','green','yellow','gold','brown','gray','black'];
 
 const FINISH_LABELS = {
   glossy: 'Brillant',
@@ -20,7 +20,8 @@ const BRAND_SHORT = {
 };
 
 let allGlazes = [];
-let filters = { brand: 'all', temp: 'all', form: 'all', color: 'all' };
+let filters = { brand: 'all', temp: 'all', form: 'all' };
+let selectedColors = new Set();
 let selectedTags = new Set();
 let searchQuery = '';
 
@@ -113,7 +114,7 @@ function render() {
     if (filters.brand !== 'all' && g.brand !== filters.brand) return false;
     if (filters.temp !== 'all' && g.tempCategory !== filters.temp) return false;
     if (filters.form !== 'all' && g.form !== filters.form) return false;
-    if (filters.color !== 'all' && g.colorFamily !== filters.color) return false;
+    if (selectedColors.size > 0 && !selectedColors.has(g.colorFamily)) return false;
     if (selectedTags.size > 0 && !g.tags.some(t => selectedTags.has(t))) return false;
     if (q && !`${g.name} ${g.notes} ${g.reference} ${g.tags.join(' ')}`.toLowerCase().includes(q)) return false;
     return true;
@@ -135,7 +136,6 @@ function setupFilters() {
     'filter-brand': 'brand',
     'filter-temp': 'temp',
     'filter-form': 'form',
-    'filter-color': 'color',
   };
 
   Object.entries(filterMap).forEach(([elId, filterKey]) => {
@@ -153,6 +153,30 @@ function setupFilters() {
       }
       render();
     });
+  });
+
+  document.getElementById('filter-color').addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    const value = chip.dataset.value;
+    if (value === 'all') {
+      selectedColors.clear();
+      document.querySelectorAll('#filter-color .chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+    } else {
+      document.querySelector('#filter-color [data-value="all"]').classList.remove('active');
+      if (chip.classList.contains('active')) {
+        chip.classList.remove('active');
+        selectedColors.delete(value);
+        if (selectedColors.size === 0) {
+          document.querySelector('#filter-color [data-value="all"]').classList.add('active');
+        }
+      } else {
+        chip.classList.add('active');
+        selectedColors.add(value);
+      }
+    }
+    render();
   });
 }
 
