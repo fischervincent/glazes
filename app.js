@@ -25,10 +25,69 @@ let selectedColors = new Set();
 let selectedTags = new Set();
 let searchQuery = '';
 
+function syncToUrl() {
+  const params = new URLSearchParams();
+  if (filters.brand !== 'all') params.set('brand', filters.brand);
+  if (filters.temp !== 'all') params.set('temp', filters.temp);
+  if (filters.form !== 'all') params.set('form', filters.form);
+  if (selectedColors.size > 0) params.set('color', [...selectedColors].join(','));
+  if (selectedTags.size > 0) params.set('type', [...selectedTags].join(','));
+  if (searchQuery) params.set('q', searchQuery);
+  const viewMode = document.getElementById('glaze-grid').classList.contains('mode-picture') ? 'picture' : '';
+  if (viewMode) params.set('view', viewMode);
+  const qs = params.toString();
+  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+}
+
+function restoreFromUrl() {
+  const params = new URLSearchParams(location.search);
+
+  if (params.has('brand')) filters.brand = params.get('brand');
+  if (params.has('temp')) filters.temp = params.get('temp');
+  if (params.has('form')) filters.form = params.get('form');
+  if (params.has('color')) params.get('color').split(',').forEach(c => selectedColors.add(c));
+  if (params.has('type')) params.get('type').split(',').forEach(t => selectedTags.add(t));
+  if (params.has('q')) searchQuery = params.get('q');
+
+  ['brand', 'temp', 'form'].forEach(key => {
+    const elId = `filter-${key}`;
+    const val = filters[key];
+    if (val !== 'all') {
+      document.querySelectorAll(`#${elId} .chip`).forEach(c => c.classList.remove('active'));
+      const chip = document.querySelector(`#${elId} [data-value="${CSS.escape(val)}"]`);
+      if (chip) chip.classList.add('active');
+    }
+  });
+
+  if (selectedColors.size > 0) {
+    document.querySelectorAll('#filter-color .chip').forEach(c => c.classList.remove('active'));
+    selectedColors.forEach(v => {
+      const chip = document.querySelector(`#filter-color [data-value="${v}"]`);
+      if (chip) chip.classList.add('active');
+    });
+  }
+
+  if (selectedTags.size > 0) {
+    document.querySelectorAll('#filter-type .chip').forEach(c => c.classList.remove('active'));
+    selectedTags.forEach(v => {
+      const chip = document.querySelector(`#filter-type [data-value="${v}"]`);
+      if (chip) chip.classList.add('active');
+    });
+  }
+
+  if (searchQuery) document.getElementById('search-input').value = searchQuery;
+
+  if (params.get('view') === 'picture') {
+    document.getElementById('glaze-grid').classList.add('mode-picture');
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === 'picture'));
+  }
+}
+
 async function init() {
   const response = await fetch('glazes.json');
   const data = await response.json();
   allGlazes = data.glazes;
+  restoreFromUrl();
   render();
   setupFilters();
   setupSearch();
@@ -129,6 +188,7 @@ function render() {
   const fragment = document.createDocumentFragment();
   filtered.forEach(g => fragment.appendChild(buildCard(g)));
   grid.appendChild(fragment);
+  syncToUrl();
 }
 
 function setupFilters() {
@@ -219,6 +279,7 @@ function setupViewToggle() {
     if (!btn) return;
     document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b === btn));
     document.getElementById('glaze-grid').classList.toggle('mode-picture', btn.dataset.mode === 'picture');
+    syncToUrl();
   });
 }
 
